@@ -12,7 +12,13 @@ body {
   align-items: center;
   height: 100vh;
   font-family: open sans;
-  color: #10214e;
+  color: #191919;
+  background-color: #373737;
+    background-image: radial-gradient(#efefef 10%, transparent 11%),
+      radial-gradient(#d6d6d6 10%, transparent 11%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
 }
 
 article {
@@ -26,7 +32,7 @@ article {
   min-width: 20em;
   border-radius: 1rem;
   background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  background: linear-gradient(0deg, rgb(211, 211, 211) 40%, #bcbcbc 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -41,7 +47,7 @@ header {
 
 h1 {
   margin: 2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: rgb(85, 85, 85);
 }
 
 button {
@@ -53,23 +59,23 @@ button {
   padding: .25rem;
   border: none;
   border-radius: 50%;
-  background: rgba(0,239,255,1);
+  background: #939393;
   transform: scale(.8);
   transition: .25s;
 }
 button:focus {
   outline: none;
-  background: #202592;
+  background: #939393;
 }
 button:focus svg {
-  stroke: rgba(0,239,255,1);
+  stroke: rgb(99, 99, 99);
 }
 
 svg {
   position: absolute;
   top: calc(1.25rem - 12px);
   left: calc(1.25rem - 12px);
-  stroke: #4e54c8;
+  stroke: #191919;
   transition-delay: .25s;
 }
 button svg:nth-of-type(2) {
